@@ -1,0 +1,25 @@
+services:
+  app1:
+    build: .
+    container_name: app1c
+    environment:
+      - APP_NAME=applic1
+    ports:
+      - 3001:3000
+
+  app2:
+    build: .
+    container_name: app2c
+    environment:
+      - APP_NAME=applic2
+    ports:
+      - 3002:3000
+
+  app3:
+    build: .
+    container_name: app3c
+    environment:
+      - APP_NAME=applic3
+    ports:
+      - 3003:3000
+
